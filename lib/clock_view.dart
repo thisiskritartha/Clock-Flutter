@@ -13,10 +13,10 @@ class ClockView extends StatefulWidget {
 class _ClockViewState extends State<ClockView> {
   @override
   void initState() {
+    super.initState();
     Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {});
     });
-    super.initState();
   }
 
   @override
